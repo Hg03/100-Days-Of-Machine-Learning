@@ -1,0 +1,18 @@
+site_name: 100 Days of Machine Learning 🔥 🚀
+theme:
+  name: material
+  
+  palette:
+      - scheme: default
+        toggle:
+          icon: material/toggle-switch-off-outline 
+          name: Switch to dark mode
+        primary: teal
+        accent: purple 
+      - scheme: slate 
+        toggle:
+          icon: material/toggle-switch
+          name: Switch to light mode    
+        primary: teal
+        accent: lime
+
