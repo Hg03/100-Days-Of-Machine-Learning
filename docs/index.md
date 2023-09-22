@@ -7,4 +7,11 @@ Hi, my name is **Harish Gehlot** and I am **Data Science and Machine Learning En
 
 - Day 1
 
-    - `In Day 1, we'll learn about Basic concepts of Machine Learning`
+    - `In Day 1, we'll learn about Basic concepts of Machine Learning.`
+    - `What is Machine learning ?.`
+    - `Supervised, Unsupervised and Reinforcement Learning .`
+    - `Procedure to build machine learning model and further serving it as application.`
+
+- Day 2
+
+    - ``
