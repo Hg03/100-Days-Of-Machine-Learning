@@ -14,4 +14,4 @@ Hi, my name is **Harish Gehlot** and I am **Data Science and Machine Learning En
 
 - Day 2
 
-    - ``
+    - `Some basic Machine Learning Interview questions .`
