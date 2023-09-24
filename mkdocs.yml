@@ -18,7 +18,6 @@ theme:
         primary: teal
         accent: lime
   features:
-    - navigation.tabs
     - navigation.sections
     - toc.integrate
     - navigation.top
