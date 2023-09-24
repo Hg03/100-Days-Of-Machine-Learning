@@ -42,8 +42,34 @@ Hi, my name is **Harish Gehlot** and I am **Data Science and Machine Learning En
 - Day 9
     - `Generate a sequential pipeline to transform the dataset .`
 
-- Day 10 to 15 (Building Small project)
+- Day 10 to 15
     - `Learn and Implement **Linear Regression Algorithm** .`
+    - `Machine learning interview question regarding this algorithm .`
 
-- Day 16 to 20 (Building Small project)
+- Day 16 to 20
     - `Logistic Regression`
+    - `Machine learning interview question regarding this algorithm .`
+
+- Day 21 to 25
+    - `Support Vector Machine`
+
+- Day 26 to 34
+    - `Decision Tree Algorithm`
+    - `Random Forest Algorithm`
+    - `Machine learning interview question regarding this algorithms .`
+
+- Day 35 to 40
+    - `**ADABoost** and **GradientBoost** Algorithm .`
+    - `Machine learning interview question regarding this algorithm .`
+
+- Day 41 to 44
+    - `**Naive Bayes** Algorithm .`
+    - `Machine learning interview question regarding this algorithm .`
+
+- Day 45 to 49
+    - `Learn about different metrics that we can use to check the accuracy of the model.`
+
+- Day 50 to 54 (Building First Machine Learning Project)
+    - `Proceeding the whole ML lifecycle (without MLOps) .`
+    - `Preprocess the data and identify which ML algorith to choose according to the metrics that we've used .`
+
