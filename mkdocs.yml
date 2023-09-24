@@ -1,6 +1,8 @@
 site_name: 100 Days of Machine Learning 🔥 🚀
+site_url: https://hg03.github.io/100-Days-Of-Machine-Learning
 theme:
   name: material
+  logo: assets/logo.svg
   
   palette:
       - scheme: default
@@ -15,4 +17,14 @@ theme:
           name: Switch to light mode    
         primary: teal
         accent: lime
+
+plugins:
+  - social
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Hg03
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/harish-gehlot-5338a021a/
 

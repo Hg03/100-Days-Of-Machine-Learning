@@ -69,7 +69,18 @@ Hi, my name is **Harish Gehlot** and I am **Data Science and Machine Learning En
 - Day 45 to 49
     - `Learn about different metrics that we can use to check the accuracy of the model.`
 
-- Day 50 to 54 (Building First Machine Learning Project)
-    - `Proceeding the whole ML lifecycle (without MLOps) .`
+- Day 50 to 54 (Building First Machine Learning Regression Project)
+    - `Proceeding the whole ML lifecycle (without MLOps) and build the Regression model.`
     - `Preprocess the data and identify which ML algorith to choose according to the metrics that we've used .`
+
+- Day 55 to 57 (Building Second Machine Learning Classification Project)
+    - `Proceeding the whole ML lifecycle (without MLOps) and build the Classification model.`
+    - `Preprocess the data and identify which ML algorith to choose according to the metrics that we've used .`
+
+- Day 58 to 59 (Building Visualization Dashboard)
+    - `Visualize the dataset and create an insightful dashboard .`
+
+- Day 60
+    - `Let's move to unsupervised learning ?`
+    - `Different Unsupervised Machine Learning Algorithms ?`
 
