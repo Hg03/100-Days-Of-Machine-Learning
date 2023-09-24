@@ -1,1 +1,3 @@
-# Day 1 - Concepts of Machine Learning
+# Day 1
+
+## Concepts and Terminologies
