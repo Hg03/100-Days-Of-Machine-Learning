@@ -36,7 +36,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Hg03
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/harish-gehlot-5338a021a/
+      link: https://www.linkedin.com/in/harishgehlot/
   generator: false
 
 markdown_extensions:

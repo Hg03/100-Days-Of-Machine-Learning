@@ -12,6 +12,38 @@ To be more **technical**, A machine 📠 is a system or module which takes **dat
 
 Now let's get some familiarity with **Machine Learning** terminologies - 
 
+- `Data` : The raw information or observations used for training and testing machine learning models. Data can be in various forms, such as text, images, numbers, or more.
 
+- `Feature` : An individual input variable or attribute used in a machine learning model to make predictions or classifications. Features are derived from the data.
+
+- `Label or Target` : The output or outcome that a machine learning model predicts or classifies. In supervised learning, the model is trained to predict the label.
+
+- `Training Data` : A subset of the data used to train a machine learning model. It includes both the features and their corresponding labels.
+
+- `Testing Data` : A separate subset of the data used to evaluate the performance of a machine learning model after it has been trained.
+
+- `Algorithm` : A set of rules and procedures that a machine learning model follows to learn from data and make predictions or decisions. Examples include decision trees, neural networks, and k-nearest neighbors.
+
+- `Model` : The result of training a machine learning algorithm on data. It represents the learned patterns and relationships in the data.
+
+- `Supervised Learning` : A type of machine learning where the model is trained on labeled data, and its goal is to learn a mapping from input features to output labels.
+
+- `Unsupervised Learning` : A type of machine learning where the model is trained on unlabeled data, and its goal is to discover patterns or structure in the data without specific output labels.
+
+- `Classification` : A type of supervised learning task where the goal is to assign data points to predefined categories or classes.
+
+- `Regression` : A type of supervised learning task where the goal is to predict a continuous numeric value as the output.
+
+- `Overfitting` : Occurs when a machine learning model performs well on the training data but poorly on new, unseen data because it has learned noise or irrelevant patterns.
+
+- `Underfitting` : Occurs when a machine learning model is too simple to capture the underlying patterns in the data and performs poorly on both training and testing data.
+
+- `Accuracy` : A common evaluation metric that measures the proportion of correctly predicted instances in a classification task.
+
+- `Loss Function` : A mathematical function that quantifies the error between the model's predictions and the actual target values, used during training to optimize the model.
+
+- `Feature Engineering` : The process of selecting, transforming, or creating new features from the raw data to improve a machine learning model's performance.
+
+- `Validation Set` : A subset of the data used during model training to tune hyperparameters and avoid overfitting.
 
 
