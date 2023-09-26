@@ -48,6 +48,32 @@ Now let's get some familiarity with **Machine Learning** terminologies -
 
 ## Dive into Supervised Learning
 
+**Supervised Machine Learning 🎯** is a type of Machine Learning in which algorithmic model trains on a dataset which have independent features and target both. So in this category of machine learning,  model will analyze the patterns and understand how target value can be generated / calculated using independent features.
+
+
+`For example :-`
+
+- **Diabetes prediction 🧋** - Suppose we have a dataset having independent features like `cholestrol`, `Blood pressure`, `systolic pressure` etc. and one target feature depicting that person is **diabetic** or not.
+
+- **House Price Prediction 🏚️** - Suppose we have a dataset having independent features like `number of rooms`, `area (in square km)` etc. and one target feature depicting the price of house.
+
+
 ## Dive into Unsupervised Learning
 
+**Unsupervised Machine Learning 🔴** is a type of Machine Learning in which algorithmic model trains on a unlabelled dataset (means no target) and model will try to identify pattern and create different clusters based on different pattern model observe.
+
+`For example :-`
+
+- `revenue prediction` - An example of unsupervised machine learning would be a case where a supermarket wants to increase its revenue. It decides to implement a machine learning algorithm on its sold products’ data. It was observed that the customers who bought cereals more often tend to buy milk or those who buy eggs tend to buy bacon. Thus, redesigning the store and placing related products side by side can help them understand consumer mindset and increase revenue.
+
 ## Dive into Reinforcement Learning
+
+**Reinforcement Machine Learning 🌪️** is a type of machine learning where an agent learns to make sequential decisions to maximize a cumulative reward. It is commonly used in scenarios where an agent interacts with an environment and learns to take actions that lead to the most desirable outcomes over time.
+
+`For example :-`
+
+Game playing (e.g., AlphaGo, which learned to play the board game Go), autonomous driving (teaching a self-driving car to navigate safely), robotics (training a robot to perform tasks), and recommendation systems (learning to recommend products or content to users).
+
+## Resource 🪵
+
+You can learn more about types of machine learning through this [video 📼](https://youtu.be/4dwsSz_fNSQ?si=kqX4Vy5EM3puSmI9)
