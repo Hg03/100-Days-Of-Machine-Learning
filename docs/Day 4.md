@@ -64,5 +64,15 @@ data.isnull().sum() # it will display number of missing values in each feature
 
 We can see that there are missing values in feature `engine`, `power`, `seats`, `new price` and `price`. In further days, we'll deal with those missing values that how we can remove them or replace them.
 
-## 
+## Remove Unwanted columns 📎
+
+There are many columns which we don't want to use for training our machine learning model, like `S.No` because this column don't have a meaning it is just numbering. So we'll remove them 
+
+```python
+data = data.drop(['S.No.'],axis=1) # axis = 1 is for column wise
+```
+
+**After removing column, dataset will look like**
+
+![Alt text](assets/afterremoving.png)
 
