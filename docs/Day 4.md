@@ -17,9 +17,9 @@ data.head()
 
 ![Alt text](assets/head.png)
 
-## Info and describe
+## Info and describe 🤡
 
-As we can see, data contains numerical features as well as categorical features, let's view it and also understand `max` , `min`, `mean` etc of all the features for statistical analysis.
+As we can see, data contains numerical features as well as categorical features, let's view it and also understand `max` , `min`, `count`, `mean` etc of all the features for statistical analysis.
 
 ```python
 data.info()
@@ -38,7 +38,31 @@ data.describe().T
 
 **Note** - Describe function analyzes the statistical insights of only numerical features.
 
+## Number of Unique values 
 
+Why we need to find unique values ? 
+- because when length of data is not equal to total unique value, it means data contains duplicate values and duplicate values is the senseless thing in the data.
 
+```python
+data.nunique()
+```
+**Output**
 
+![Alt text](assets/nunique.png)
+
+## Missing values calculation 🖩
+
+Our machine learning model doesn't work wells when there is missing values in the data. Sometimes it also gives errors that data has `NaN` values. So to count number of missing values. we can use 
+
+```python
+data.isnull().sum() # it will display number of missing values in each feature
+```
+
+**Output**
+
+![Alt text](assets/missing.png)
+
+We can see that there are missing values in feature `engine`, `power`, `seats`, `new price` and `price`. In further days, we'll deal with those missing values that how we can remove them or replace them.
+
+## 
 
