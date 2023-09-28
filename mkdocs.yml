@@ -34,7 +34,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Hg03
+      link: https://github.com/Hg03/100-Days-Of-Machine-Learning
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/harishgehlot/
   generator: false
