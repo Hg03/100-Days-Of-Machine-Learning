@@ -9,23 +9,23 @@ Dealing with missing data is a common and inherent issue in data collection, esp
 
 When not appropriately handled, missing data can bias the conclusions of all the statistical analyses on the data, leading the business to make wrong decisions.
 
-### Types of missing data
+### Types of missing data 🆎
 
 Missing data occurs in different formats. This section explains the different types of missing data and how to identify them.
 
-#### MCAR - Missing completely at random
+#### MCAR - Missing completely at random 🌑
 
 This happens if all the variables and observations have the same probability of being missing. Imagine providing a child with Lego of different colors to build a house. Each Lego represents a piece of information, like shape and color. The child might lose some Legos during the game. These lost legos represent missing information, just like when they can’t remember the shape or the color of the Lego they had. That information was lost randomly, but they do not change the information the child has on the other Legos. `Inshort , data that we've lost or missing is not harming or related to any other feature.`
 
-#### MAR - Missing at random
+#### MAR - Missing at random 🌙
 
 For MAR, the probability of the value being missing is related to the value of the variable or other variables in the dataset. This means that not all the observations and variables have the same chance of being missing. An example of MAR is a survey in the Data community where data scientists who do not frequently upgrade their skills are more likely not to be aware of new state-of-the-art algorithms or technologies, hence skipping certain questions. The missing data, in this case, is related to how frequently the data scientist upskills. `Like here, if we are not updating our knowledge, we'll go to downfall or become jobless means missing value is related (partially) somewhere.`
 
-#### MNAR- Missing not at random
+#### MNAR- Missing not at random ☀️
 
 MNAR is considered to be the most difficult scenario among the three types of missing data. It is applied when neither MAR nor MCAR apply. In this situation, the probability of being missing is completely different for different values of the same variable, and these reasons can be unknown to us. An example of MNAR is a survey about married couples. Couples with a bad relationship might not want to answer certain questions as they might feel embarrassed to do so. `We can't find out, why values are missing or any relation.`
 
-## How to identify missing value
+## How to identify missing value 👓
 
 Basically we used these function to find out any missing data in a features :- 
 
@@ -36,15 +36,15 @@ Basically we used these function to find out any missing data in a features :-
 |**.info()**|This function generates three main columns, including the “Non-Null Count” which shows the number of non-missing values for each column.|
 |**.isna()**|This one is similar to isnull and notnull. However it shows True only when the missing value is NaN type.|
 
-## Data
+## Data 💾
 
 So new day, new data 😆, We will look at the [Telecom customer churn dataset](https://www.kaggle.com/datasets/royjafari/customer-churn) which we'll look into more detail while handling missing data below
 
-## Handle Missing data
+## Handle Missing data 🪛
 
 Since the dataset does not have any missing values,  we will use a subset of the data (100 rows) and then manually introduce missing values.
 
-### Import library and read the data
+### Import library and read the data 🛻
 
 ```python
 import pandas as pd
@@ -78,7 +78,7 @@ After adding missing data , **Output**
 
 ![Alt text](assets/loan_info_after.png)
 
-### Data dropping
+### Data dropping 💧
 
 Using the dropna() function is the easiest way to remove observations or features with missing values from the dataframe. Below are some techniques. 
 
@@ -111,7 +111,7 @@ Like many other approaches, `dropna()` also has some pros and cons.
 |----|----|
 |- Straightforward and simple to use.<br>- Beneficial when missing values have no importance.|- Using this approach can lead to information loss, which can introduce bias to the final dataset.<br>- This is not appropriate when the data is not missing completely at random.<br>- Data set with a large proportion of missing value can be significantly decreased, which can impact the result of all statistical analysis on that data set.|
 
-### Mean/Median Imputation
+### Mean/Median Imputation 🏦
 
 These replacement strategies  are self-explanatory. Mean and median imputations are respectively used to replace missing values of a given column with the mean and median of the non-missing values in that column. **Normal distribution** is the ideal scenario. Unfortunately, it is not always the case. This is where the median imputation can be helpful because it is not sensitive to outliers. In Python, the `fillna()` function from pandas can be used to make these replacements. 
 
@@ -138,7 +138,7 @@ Let's see **pros** and **cons** of these strategy :-
 |----|----|
 |- Simplicity and ease of implementation are some of the benefits of the mean and median imputation.<br>- The imputation is performed using the existing information from the non-missing data; hence no additional data is required.<br>- Mean and median imputation can provide a good estimate of the missing values, respectively for normally distributed data, and skewed data.|- We cannot apply these two strategies to categorical columns. They can only work for numerical ones.<br>- Mean imputation is sensitive to outliers and may not be a good representation of the central tendency of the data. Similarly to the mean, the median also may not better represent the central tendency.<br>- Median imputation makes the assumption that the data is missing completely at random (MCAR), which is not always true.|
 
-### Random Sample Imputation
+### Random Sample Imputation 🧪
 
 The idea behind the random sample imputation is different from the previous ones and involves additional steps. 
 
@@ -180,7 +180,7 @@ Go and implement lazy 😆😆
 |----|----|
 |- This is an easy and straightforward technique.<br>- It tackles both numerical and categorical data types.<br> - There is less distortion in data variance, and it also preserves the original distribution of the data, which is not the case for mean, median, and more.|- The randomness does not necessarily work for every situation, and this can infuse noise in the data, hence leading to incorrect statistical conclusions.<br>- Similarly to the mean and median, this approach also assumes that the data is missing completely at random (MCAR).|
 
-### Multivariate imputation
+### Multivariate imputation 🧪🧪
 
 This is a multivariate imputation technique, meaning that the missing information is filled by taking into consideration the information from the other columns. 
 
