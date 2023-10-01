@@ -1,6 +1,6 @@
-## Different methods to remove outliers
+## Different methods to remove outliers 🏮
 
-## What are Outliers ?
+## What are Outliers ? ⛩️
 
 An **outlier** is an extreme value that lies at an abnormal distance from other points in the dataset. Dealing with outliers is tricky because sometimes, it can reveal abnormal cases or individuals with rare traits. It can also distort statistical analyses and violate their assumptions. In general, machine learning modeling and model skills can be improved by understanding and even removing these outlier values. Hence it is sometimes recommended to remove outliers from data before feeding it to the machine learning model. 
 
@@ -10,7 +10,7 @@ As mentioned earlier, outliers are extreme values present in data. One can look 
 
 Most of the time, data scientists deal with larger-size data. Hence, identifying outliers from data looking at a glance is not possible. Instead, there are different methods to identify and decide whether the data point is an outlier. Sometimes, a sample that lies beyond **three standard deviations** of the data is considered an outlier. **InterQuartile Range (IQR)** is also used to identify possible outliers. IQR is used to measure variability by dividing a data set into quartiles. The data is sorted in ascending order and split into three equal parts. Q1, Q2, and Q3, the first, second, and third quartiles, are the values that separate the four equal parts. Q1, Q2, and Q3 represent the data's 25th percentile, 50th percentile, and 75th percentile, respectively. **IQR is the range between the first and the third quartiles, namely Q1 and Q3: IQR = Q3 – Q1. The data points that fall below Q1 – 1.5 IQR or above Q3 + 1.5 IQR are outliers**.
 
-## When should you remove outliers ?
+## When should you remove outliers ? 🎨
 
 Outliers sometimes affect the performance of a model, But they also uncover rare traits. Hence, whether to keep an outlier or not, that decision should be made judiciously. Look at the figure shown below:
 
@@ -28,11 +28,11 @@ Undoubtedly, the outlier changes the slope of the regression line significantly.
 
 If the analysis shows that the outlier doesn't impact the result, one needs to check if it contradicts the assumptions made in the analysis. If yes, then again, we can discard the outlier, or there is no harm in keeping the outlier and feeding the data to the model.
 
-## Methods to Remove outliers (code example)
+## Methods to Remove outliers (code example) 💳
 
 Several methods can help us to detect the outlier. Once detected, we can quickly eliminate them from our data before feeding the data into a model. Here, we will discuss three different methods to identify and remove outliers.
 
-### Standard Deviation Method
+### Standard Deviation Method 🌌
 
 If data follows gaussian or nearby gaussian distribution, the standard deviation can be used as a cut-off for identifying outliers. For data following gaussian distribution, its mean summarises the percentage of values in the sample. For example, 1 Standard Deviation from the mean covers 68% of data, 2 Standard Deviations from the mean cover 95% of data, and 3 Standard Deviations from the mean cover 99.7%.
 
@@ -71,7 +71,7 @@ Identified outliers: 29
 Non-outlier observations: 9971
 ```
 
-### Interquartile Range
+### Interquartile Range 🐬
 
 Training data may only sometimes follow Gaussian distribution or nearly Gaussian distribution. In such cases, the Interquartile Range, or IQR for short, helps to eliminate outliers. The IQR is the difference between the data's 75th and 25th percentiles. It represents the box in a box and whisker plot. IQR-based outlier detection techniques assume that the non-anomalous data points lie at high-density regions, while outliers would occur sparsely.
 
@@ -109,7 +109,7 @@ Identified outliers: 81
 Non-outlier observations: 9919
 ```
 
-### Automatic Outlier Detection : One class classification
+### Automatic Outlier Detection : One class classification 🦈
 
 One-class classification is another approach for identifying outliers. A one-class classifier is trained on data without an outlier. Once training is done, it can identify data comprised of both outliers. The local outlier factor(LOF) algorithm works based on the nearest neighbors technique for outlier detection. Here, samples are given a score based on how isolated they are based on their local neighborhood. Examples with the most significant score are more likely to be outliers.
 
