@@ -25,13 +25,10 @@ Let’s start by getting our categorical and numerical variables that we want to
 
 ```python
 #Categorical variables to use
-cat_vars = ["instant_bookable", "is_business_travel_ready", "cancellation_policy","host_is_superhost", "neighbourhood_cleansed","property_type","room_type", "bed_type"]
+cat_vars = [col for col in raw_data.columns if raw_data[col].dtypes=='O']
 
 # Numerical Variables to use
-num_vars = ['price', 'square_feet','minimum_nights','weekly_price', 'monthly_price', 'security_deposit','bathrooms', 'bedrooms', 'beds', "guests_included",
-       'cleaning_fee', "reviews_per_month","host_listings_count",
-           "calculated_host_listings_count_shared_rooms", "host_response_rate", "host_acceptance_rate",
-           "review_scores_cleanliness","review_scores_value","review_scores_rating", "number_of_reviews"]
+num_vars = [col for col in raw_data.columns if col not in cat_vars]
 
 airbnb_data = raw_data
 
