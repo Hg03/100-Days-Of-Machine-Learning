@@ -70,7 +70,9 @@ Numerical variables are pretty straightforward. Let us deal with categorical dat
 How our categorical data looks:
 
 ```python
+
 airbnb_data[cat_vars].head()
+
 ```
 
 **Output**
