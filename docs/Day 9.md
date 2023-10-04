@@ -1,4 +1,4 @@
-## Build Data Preprocessing Pipeline
+## Build Data Preprocessing Pipeline ⚗️ ⚗️
 
 Today we will going to learn -
 
@@ -6,7 +6,7 @@ Today we will going to learn -
 - Easily track all transformations you apply to your dataset.
 - Start building your library of transformations which you can use later
 
-## Begin with Data
+## Begin with Data 🇷🇪
 
 For all of these examples, I will be using the airbnb NYC listings dataset from [insideairbnb](http://insideairbnb.com/) . This is a real dataset containing information scraped from airbnb and has all the information related to a listing on the site.
 
@@ -42,7 +42,7 @@ after = airbnb_data.shape[0] # rows reduced as we are dropping the whole row if 
 airbnb_data = airbnb_data[cat_vars + num_vars]
 ```
 
-## Imputation
+## Imputation 🚜 🚜
 
 Is a dataset even real if it isn’t missing data? The reality is that we have to deal with missing data all the time. You will have to decide how to deal with missing data for your specific use
 
@@ -63,7 +63,7 @@ airbnb_num = imputer.fit_transform(airbnb_num)
 
 The `SimpleImputer` class will replace all the missing values with the median. The `.fit_transform()` method will return a nice numpy array object that is ready to be used with any machine learning method. You can choose different metrics and pass it as an argument.
 
-## Encoding Categorical Variables
+## Encoding Categorical Variables 😾
 
 Numerical variables are pretty straightforward. Let us deal with categorical data that usually comes in strings. In this case, we have to deal with variables such as neighborhood, room_type, bed_type. Machine Learning algorithms work better with numbers, so we will convert our categorical variables.
 
@@ -111,7 +111,7 @@ A wild sparse matrix appears! Instead of a NumPy array the encoder returns a spa
 
 The matrix is full of 0s except for a single 1 per row. This would use a lot of memory to store but the spare matrix is smart and stores only the location of the nonzero elements.
 
-## Feature Scaling
+## Feature Scaling ⚖️ ⚖️
 
 It is very important to scale our data when using machine learning algorithms. There are exceptions, but when the variables are in different scales we usually need to scale them. You can read all about it here.
 
@@ -127,7 +127,7 @@ StandardScaler().fit_transform(airbnb_num)
 
 That was easy!
 
-## Custom Transformations
+## Custom Transformations 🈂️ 
 
 Scikit-Learn API is very flexible lets you create your own custom “transformation” that you can easily incorporate into your process. You just need to implement the **fit()**, **transform()**, and **fit_transform()** methods.
 
@@ -156,7 +156,7 @@ class NewVariablesAdder(BaseEstimator, TransformerMixin):
 
 Checkout the Scikit-Learn documentation for more details and [examples](https://scikit-learn.org/stable/developers/develop.html).
 
-## Build sequential pipeline
+## Build sequential pipeline ⚗️ ⚗️
 
 We can finally put everything together! One dataset can require several transformations which vary according to the variable type. These must also be performed in the right order.
 
@@ -198,7 +198,7 @@ It takes in a list of tuples with (‘name’, transformer/pipeline, ‘variable
 
 Once we have set up and defined our pipeline process, we can apply it to any dataset or fresh new data easily with the `fit_transform()` method.
 
-## Conclusion
+## Conclusion 🏁 
 
 Now you know the basics of implementing clean and efficient pipelines that can be easily organized and utilized on different datasets. For more detailed information reference the Scikit-Learn documentation
 
