@@ -59,5 +59,44 @@ Despite providing a convenient closed-form solution for finding our optimal coef
 In research publications and statistical software, coefficients of regression models are often presented with associated p-values. These p-values come from traditional null hypothesis statistical tests: t-tests are used to measure whether a given cofficient is significantly different than zero (the null hypothesis that a particular coefficient <b>β<sub>i</sub></b>​ equals zero), while F tests are used to measure whether any of the terms in a regression model are significantly different from zero. Different opinions exist on the utility of such tests . We don't take a strong stance on this issue, but believe practitioners should always assess the standard error around any parameter estimates for themselves and present them in their research.
 
 
+## Interpreting Regression models
+
+One of the most powerful aspects of regression models is their interpretability. However, different forms of regression models require different interpretations. To make this clear, we'll walk through several typical constructs of a regression model, and describe how to interpret each in turn. For all aforementioned models, we interpret the error term as irreducible noise not captured by our model.
+
+### A Binary Feature
+
+![Alt text](assets/f.png)
+
+### A Continuous Feature
+
+![Alt text](assets/f1.png)
+
+### Multivariate regression
+
+![Alt text](assets/f2.png)
+
+### Regression with Interaction
+
+![Alt text](assets/f3.png)
+
+## Regression model assumptions
+
+When teaching regression models, it's common to mention the various assumptions underpinning linear regression. For completion, we'll list some of those assumptions here. However, in the context of machine learning we care most about if the predictions made from our model generalize well to unseen data. We'll use our model if it generalizes well even if it violates statistical assumptions. Still, no treatment of regression is complete without mentioning the assumptions.
+
+- **Validity:** Does the data we're modeling matches to the problem we're actually trying to solve?
+
+- **Representativeness:** Is the sample data used to train the regression model representative of the population to which it will be applied?
+
+- **Additivity and Linearity:** The deterministic component of a regression model is a linear function of the separate predictors: y= B<sub>0</sub> + B<sub>1</sub>x<sub>1</sub>+...+ B<sub>p</sub>x<sub>p</sub>.
+
+- **Independence of Errors:** The errors from our model are independent.
+
+- **Homoscedasticity:** The errors from our model have equal variance.
+- **Normality of Errors:** The errors from our model are normally distributed.
+
+### When Assumptions fail ?
+
+What should we do if the assumptions for our regression model aren't met? Don't fret, it's not the end of the world! First, double-check that the assumptions even matter in the first place: if the predictions made from our model generalize well to unseen data, and our task is to create a model that generalizes well, then we're probably fine. If not, figure out which assumption is being violated, and how to address it! This will change depending on the assumption being violated, but in general, one can attempt to extend the model, accompany new data, transform the existing data, or some combination thereof. If a model transformation is unfit, perhaps the application (or research question) can be changed or restricted to better align with the data. In practice, some combination of the above will usually suffice.
+
 
 
