@@ -1,6 +1,6 @@
 ## Estimating Coefficients
 
-How do we find the coefficients (β<sub>0</sub><sup>^</sup>,β<sub>1</sub><sup>^</sup>,...,β<sub>k<sub><sup>^</sup>​) that minimize the loss function? There are two main approaches for logistic regression: gradient descent and maximum likelihood estimation. We’ll briefly discuss both here.
+How do we find the coefficients <b>β<sub>0</sub><sup>^</sup>,β<sub>1</sub><sup>^</sup>,...,β<sub>k<sub><sup>^</sup></b>​ that minimize the loss function? There are two main approaches for logistic regression : gradient descent and maximum likelihood estimation. We’ll briefly discuss both here.
 
 ## Gradient Descent
 
@@ -17,5 +17,7 @@ Another approach is finding the model that maximizes the likelihood of observing
 
 ![Alt text](assets/loglikelihood.png)
 
-We can do so by differentiating the Log-Likelihood with respect to the parameters, setting the derivatives equal to 0, and solving the equation to find the estimates of the parameters.
+We can do so by differentiating the Log-Likelihood with respect to the parameters, setting the derivatives equal to 0, and solving the equation to find the estimates of the parameters. Play with **parameters** [here](https://mlu-explain.github.io/logistic-regression/)
+
+
 
